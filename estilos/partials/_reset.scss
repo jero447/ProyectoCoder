@@ -3,4 +3,17 @@ html{
 }
 *{
     font-family: 'Roboto Condensed', sans-serif;
+    
+}
+header{
+    ::selection{
+        background-color: #ff9900;
+        color: #000;
+    }
+}
+main, footer{
+    ::selection{
+        background-color: #333;
+        color: #ff9900;
+    }
 }
