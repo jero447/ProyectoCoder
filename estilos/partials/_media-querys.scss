@@ -1,0 +1,58 @@
+@media screen and (max-width:576px) {
+    .nav-header{
+        position: relative;
+        width: 100%;
+    }
+    .primerH3{
+        margin-top: 30px;
+        margin-left: 85px;
+    }
+    main>h3{
+        margin-left: 85px;
+    }
+    .contenedor-boton{
+        .boton-ver-todo{
+            font-size: 14px;
+            margin: 30px;
+            padding: 10px 20px;
+        }
+    }
+    .contenedor-de-zapatillas {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        .contenedor-imagen{
+            width: 400px;
+        }
+        .imagen-zapatilla{
+            width: 100%;
+        }
+        .desaparecer {
+            display: none;
+        }
+    }
+    .contenedor-marcas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        margin-bottom: 20px;
+        .logo-marcas{
+            margin: 20px;
+        }
+    }
+    footer{
+        p,h3{
+            font-size: 11px;
+        }
+        .tiendas{
+            & p{
+                margin:5px
+            }
+        }
+        .logo-footer{
+            width: 85px;
+        }
+        .logo-redes{
+            width: 20px;
+        }
+    }
+}

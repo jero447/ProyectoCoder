@@ -1,0 +1,60 @@
+footer {
+    background-color: black;
+    
+    & p {
+        color: gray;
+        font-size: 1rem;
+    }
+
+    & h3 {
+        color: aliceblue;
+        font-size: 1.17rem;
+        font-weight: bold;
+    }
+
+    .contenedor-info-footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+
+        .logo-footer {
+            position: relative;
+            border-radius: 50px;
+            width: 100px;
+            bottom: 7px;
+            left: 5px;
+        }
+
+        .tiendas {
+            padding-bottom: 15px;
+
+            & p {
+                margin: 10px;
+                margin-left: 0;
+            }
+            & h3{
+                margin: 0px 0px 8px 0px;
+            }
+        }
+        .ayuda{
+
+            & p {
+                margin: 7px;
+                margin-left: 0;
+            }
+            & h3{
+                margin: 0px 0px 8px 0px;
+            }
+        }
+        
+        .logo-redes {
+            position: relative;
+            bottom: 50px;
+            background-color: #fff;
+            width: 25px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+    }
+}
