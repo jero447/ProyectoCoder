@@ -1,61 +1,142 @@
 @media screen and (max-width:576px) {
-    .nav-header{
+    .nav-header {
         position: relative;
         width: 100%;
     }
-    .primerH3{
+
+    .primerH3 {
         margin-top: 30px;
         margin-left: 85px;
     }
-    main>h3{
+
+    main>h3 {
+        margin-top: 60px;
         margin-left: 85px;
     }
-    .contenedor-boton{
-        .boton-ver-todo{
+
+    .contenedor-boton {
+        .boton-ver-todo {
             font-size: 14px;
             margin: 30px;
             padding: 10px 20px;
         }
     }
+
+    .ofertas-pagos {
+        margin-top: 0px;
+
+        h3 {
+            font-size: 15px;
+            margin: 10px 0px 3px 0px;
+        }
+
+        a {
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .contenedor-slider1 {
+
+        h1 {
+            top: 13%;
+            right: 6%;
+        }
+    }
+
+    .contenedor-slider2 {
+        h2 {
+            font-size: 10px;
+            right: 7px;
+        }
+
+        .contenedor-boton {
+            top: 35%;
+            right: 25%;
+
+            & .boton-ver-todo {
+                margin: 0px;
+                font-size: 8px;
+                padding: 7px;
+                color: palevioletred;
+
+                &:hover {
+                    color: palevioletred;
+                }
+            }
+        }
+    }
+
+    .slider-innermod {
+        height: 222px;
+    }
+
     .contenedor-de-zapatillas {
         grid-template-columns: 1fr;
         justify-items: center;
-        .contenedor-imagen{
+
+        .contenedor-imagen {
             width: 400px;
         }
-        .imagen-zapatilla{
+
+        .imagen-zapatilla {
             width: 100%;
         }
+
         .desaparecer {
             display: none;
         }
     }
-    .contenedor-marcas{
+
+    .contenedor-separacion1 {
+        & h3 {
+            font-size: 20px;
+            top: 10%;
+        }
+    }
+
+    .contenedor-separacion2 {
+        & h3 {
+            font-size: 15px;
+            right: 5%;
+            bottom: 7%;
+        }
+    }
+
+    .contenedor-marcas {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
         margin-bottom: 20px;
-        .logo-marcas{
+
+        .logo-marcas {
             margin: 20px;
+            width: 80px;
         }
     }
-    footer{
-        p,h3{
+
+    footer {
+
+        p,
+        h3 {
             font-size: 11px;
         }
-        .tiendas{
-            & p{
-                margin:5px
+
+        .tiendas {
+            & p {
+                margin: 5px
             }
         }
-        .contenedor-info-footer{
-            .logo-footer{
+
+        .contenedor-info-footer {
+            .logo-footer {
                 width: 85px;
             }
         }
-        
-        .logo-redes{
+
+        .logo-redes {
             width: 20px;
         }
     }
 }
+

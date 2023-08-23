@@ -3,9 +3,77 @@
 }
 
 main h3 {
-    margin: 50px 0px 40px 60px;
+    margin: 80px 0px 40px 60px;
     font-size: 30px;
     font-weight: bold;
+}
+
+.ofertas-pagos {
+    margin-top: 132px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f5f5f5;
+
+    & h3 {
+        font-size: 20px;
+        margin: 16px 0px 3px 0px;
+        font-weight: normal;
+        color: #111;
+    }
+
+    a {
+        text-decoration-color: black;
+        font-weight: bold;
+        color: black;
+        margin-bottom: 16px;
+    }
+}
+
+.slider-innermod {
+    height: 721px;
+}
+
+.contenedor-slider1 {
+    position: relative;
+
+    h1 {
+        position: absolute;
+        top: 20%;
+        right: 31%;
+        color: #fff;
+        font-family: 'Tilt Prism', cursive;
+    }
+}
+
+.contenedor-slider2 {
+    position: relative;
+
+    h2 {
+        position: absolute;
+        top: 10%;
+        right: 20px;
+        font-family: 'Raleway', sans-serif;
+
+        & span {
+            color: palevioletred;
+            font-weight: bold;
+            font-style: italic;
+            font-family: 'Barriecito', cursive;
+        }
+    }
+
+    & .contenedor-boton {
+        position: absolute;
+        top: 25%;
+        right: 20%;
+
+        .boton-ver-todo:hover {
+            background-color: #000;
+            color: palevioletred
+        }
+    }
 }
 
 .contenedor-de-zapatillas {
@@ -16,30 +84,42 @@ main h3 {
 
 
     .contenedor-imagen {
-
-        @for $item from 1 through 3 {
-            .img#{$item} {
-                animation-delay: $item*0.2s;
-            }
+        img{
+            box-shadow:0px 2px 6px rgba(0, 0, 0, 0.1);
         }
-
         width: 500px;
 
         .info-zapas {
             text-align: left;
             margin: 5px;
             font-size: 20px;
+            font-weight: 700;
+            color: #000;
+        }
+        .info-tipo{
+            font-weight: 500;
+            color: #757575;;
         }
     }
 
     .contenedor-imagen-sub {
         margin-bottom: 30px;
+
+        @for $item from 1 through 3 {
+            .img#{$item} {
+                animation-delay: $item*0.2s;
+            }
+        }
+        
+        p,img {
+            -webkit-animation: slide-in-elliptic-top-fwd .7s cubic-bezier(.25, .46, .45, .94) both;
+            animation: slide-in-elliptic-top-fwd .7s cubic-bezier(.25, .46, .45, .94) both;
+            width: 100%;
+        }
+
     }
 
-    .imagen-zapatilla,
-    p {
-        -webkit-animation: slide-in-elliptic-top-fwd .7s cubic-bezier(.25, .46, .45, .94) both;
-        animation: slide-in-elliptic-top-fwd .7s cubic-bezier(.25, .46, .45, .94) both;
+    .imagen-zapatilla {
         width: 100%;
     }
 
@@ -72,13 +152,60 @@ main h3 {
         font-weight: bold;
         margin: 70px;
         transition: all 0.2s;
-        &:hover{
+
+        &:hover {
             background-color: #333;
             color: #ff9900;
             padding: 20px 30px;
-            margin:65px;
+            margin: 65px;
         }
     }
+}
+
+.contenedor-separacion1 {
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+
+    h3 {
+        background-color: #333;
+        padding: 10px;
+        position: absolute;
+        font-size: 70px;
+        top: 20%;
+        right: 19%;
+        font-family: 'Permanent Marker', cursive;
+        color: #ff8c00;
+    }
+}
+
+.contenedor-separacion2 {
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+
+    h3 {
+        position: absolute;
+        font-size: 35px;
+        bottom: 20%;
+        right: 20%;
+        font-family: 'Raleway', sans-serif;
+        color: #f5f5f5;
+
+
+        & span {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            font-family: 'Permanent Marker', cursive;
+            color: #ff9900;
+        }
+    }
+
 }
 
 .contenedor-marcas {

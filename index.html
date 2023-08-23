@@ -11,8 +11,10 @@
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Barriecito&family=Permanent+Marker&family=Raleway:ital,wght@1,700&family=Roboto+Condensed:wght@300;400;700&family=Tilt+Prism&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./estilos/syles.css">
   <title>Sneaker Store</title>
@@ -39,24 +41,53 @@
     </header>
   </div>
   <main>
-    <h3 class="primerH3">Lo nuevo</h3>
+    <div class="ofertas-pagos">
+      <h3>6 cuotas sin interes con tarjetas de credito</h3>
+      <a href="#">Ver formas de pago</a>
+    </div>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner slider-innermod">
+        <div class="carousel-item active contenedor-slider1">
+          <img src="./Imagenes/imagen-slider1.jpg" class="d-block w-100 imagen-slider" alt="...">
+          <h1>¡¡Comodidad y moda en cada paso!!</h1>
+        </div>
+        <div class="carousel-item contenedor-slider2">
+          <img src="./Imagenes/imagen-slider2.jpg" class="d-block w-100 imagen-slider" alt="...">
+          <h2>Da rienda suelta a tu estilo con las nuevas <br><span>Nike SB en rosa:</span><br> "Un paso audaz hacia la
+            autenticidad y la
+            elegancia urbana."</h2>
+          <div class="contenedor-boton">
+            <button class="boton-ver-todo">Conseguilas aqui</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <h3>Lo nuevo</h3>
     <div class="contenedor-de-zapatillas">
       <div class="contenedor-imagen">
         <img src="./Imagenes/zapatilla1.webp" class="imagen-zapatilla img1" alt="zapatilla" />
         <p class="info-zapas img1">Nike Uptempo</p>
-        <p class="info-zapas img1">Zapatillas de moda para Hombre</p>
+        <p class="info-zapas img1 info-tipo">Zapatillas de moda para Hombre</p>
         <p class="info-zapas img1">50.000$</p>
       </div>
       <div class="desaparecer contenedor-imagen">
         <img src="./Imagenes/zapatilla2 .webp" class="imagen-zapatilla img2" alt="zapatilla " />
         <p class="info-zapas img2">Air force one</p>
-        <p class="info-zapas img2">Zapatillas de moda para Hombre</p>
+        <p class="info-zapas img2 info-tipo">Zapatillas de moda para Hombre</p>
         <p class="info-zapas img2">70.000$</p>
       </div>
-      <div class="desaparecer contenedor-imagen">
+      <div class="desaparecer desaparecer-tablet contenedor-imagen">
         <img src="./Imagenes/zapatilla3.webp" class="imagen-zapatilla img3" alt="zapatilla" />
         <p class="info-zapas img3">Jordan 1 low</p>
-        <p class="info-zapas img3">Zapatillas de moda para Hombre</p>
+        <p class="info-zapas img3 info-tipo">Zapatillas de moda para Hombre</p>
         <p class="info-zapas img3">60.000$</p>
       </div>
       <img src="./Imagenes/flecha-correcta-right.png" alt="flecha-derecha" class="flecha-derecha" />
@@ -65,24 +96,28 @@
     <div class="contenedor-boton">
       <button class="boton-ver-todo">Ver Todo</button>
     </div>
+    <div class="contenedor-separacion1">
+      <img src="./Imagenes/imagen-separacion1.jpg" alt="">
+      <h3>El mundo al alcance de tus pies</h3>
+    </div>
     <h3>Ofertas</h3>
-    <div class="contenedor-de-zapatillas">
+    <div class="contenedor-de-zapatillas" >
       <div class="contenedor-imagen">
         <img src="./Imagenes/zapatilla4.webp" alt="zapatilla" class="imagen-zapatilla img1" />
         <p class="info-zapas img1">Jordan 1 Mid</p>
-        <p class="info-zapas img1">Zapatillas de moda para hombre</p>
+        <p class="info-zapas img1 info-tipo">Zapatillas de moda para hombre</p>
         <p class="info-zapas img1">30.000</p>
       </div>
       <div class="desaparecer contenedor-imagen">
         <img src="./Imagenes/zapatilla5.webp" alt="zapatilla" class="imagen-zapatilla img2" />
         <p class="info-zapas img2">Jordan 5</p>
-        <p class="info-zapas img2">Zapatillas de moda para mujer</p>
+        <p class="info-zapas img2 info-tipo">Zapatillas de moda para mujer</p>
         <p class="info-zapas img2">35.000</p>
       </div>
-      <div class="desaparecer contenedor-imagen">
+      <div class="desaparecer desaparecer-tablet contenedor-imagen">
         <img src="./Imagenes/zapatilla6.webp" alt="zapatilla" class="imagen-zapatilla img3" />
         <p class="info-zapas img3">Air Max</p>
-        <p class="info-zapas img3">Zapatillas de moda para hombre</p>
+        <p class="info-zapas img3 info-tipo">Zapatillas de moda para hombre</p>
         <p class="info-zapas img3">45.000</p>
       </div>
       <img src="./Imagenes/flecha-correcta-right.png" alt="flecha-derecha" class="flecha-derecha" />
@@ -91,24 +126,28 @@
     <div class="contenedor-boton">
       <button class="boton-ver-todo">Ver Todo</button>
     </div>
+    <div class="contenedor-separacion2">
+      <img src="./Imagenes/imagen-separacion2.jpg" alt="">
+      <h3>"En tus zapatillas reside el camino hacia tus sueños." <br> <span>¡Empieza a caminar!</span></h3>
+    </div>
     <h3>Recomendado para vos</h3>
     <div class="contenedor-de-zapatillas">
       <div class="contenedor-imagen">
         <img src="./Imagenes/zapatilla7.webp" alt="zapatilla" class="imagen-zapatilla">
         <p class="info-zapas">Nike Metcon</p>
-        <p class="info-zapas">Zapatilla de entrenamiento para hombre</p>
+        <p class="info-zapas info-tipo">Zapatilla de entrenamiento para hombre</p>
         <p class="info-zapas">60.000$</p>
       </div>
       <div class="desaparecer contenedor-imagen">
         <img src="./Imagenes/zapatilla8.webp" alt="zapatilla" class="imagen-zapatilla">
         <p class="info-zapas">Nike Air Zoom</p>
-        <p class="info-zapas">Zapatilla de basket para hombre</p>
+        <p class="info-zapas info-tipo">Zapatilla de basket para hombre</p>
         <p class="info-zapas">45.000$</p>
       </div>
-      <div class="desaparecer contenedor-imagen">
+      <div class="desaparecer desaparecer-tablet contenedor-imagen">
         <img src="./Imagenes/zapatilla9.webp" alt="zapatilla" class="imagen-zapatilla">
         <p class="info-zapas">Nike Air Force One MId</p>
-        <p class="info-zapas">Zapatilla de moda para hombre</p>
+        <p class="info-zapas info-tipo">Zapatilla de moda para hombre</p>
         <p class="info-zapas">55.000$</p>
       </div>
       <img src="./Imagenes/flecha-correcta-right.png" alt="flecha-derecha" class="flecha-derecha">
