@@ -31,19 +31,18 @@ main h3 {
     }
 }
 
-.slider-innermod {
-    height: 721px;
-}
-
 .contenedor-slider1 {
     position: relative;
 
     h1 {
+        width: 45rem;
         position: absolute;
         top: 20%;
-        right: 31%;
+        left: 50%;
+        transform: translate(-40%);
         color: #fff;
         font-family: 'Tilt Prism', cursive;
+        
     }
 }
 
@@ -84,10 +83,11 @@ main h3 {
 
 
     .contenedor-imagen {
+        max-width: 500px;
         img{
             box-shadow:0px 2px 6px rgba(0, 0, 0, 0.1);
         }
-        width: 500px;
+        
 
         .info-zapas {
             text-align: left;
@@ -127,7 +127,7 @@ main h3 {
 
 .flecha-derecha {
     position: absolute;
-    width: 30px;
+    max-width: 30px;
     top: 50%;
     right: 10px;
 }
@@ -164,18 +164,19 @@ main h3 {
 
 .contenedor-separacion1 {
     position: relative;
-
+    
     img {
         width: 100%;
     }
 
-    h3 {
+    & h3 {
         background-color: #333;
         padding: 10px;
         position: absolute;
         font-size: 70px;
         top: 20%;
-        right: 19%;
+        left: 50%;
+        transform: translate(-52%);
         font-family: 'Permanent Marker', cursive;
         color: #ff8c00;
     }
@@ -190,11 +191,11 @@ main h3 {
 
     h3 {
         position: absolute;
-        font-size: 35px;
-        bottom: 20%;
+        font-size: 40px;
+        bottom: 32%;
         right: 20%;
         font-family: 'Raleway', sans-serif;
-        color: #f5f5f5;
+        color: #FFFFFF;
 
 
         & span {
