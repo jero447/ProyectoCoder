@@ -574,6 +574,9 @@ footer .contenedor-info-footer .logo-redes {
   footer .contenedor-info-footer .ayuda {
     transform: translate(15%);
   }
+  main .contenedor-carrito {
+    margin-top: 15rem;
+  }
 }
 @media screen and (min-width: 640px) and (max-width: 982px) {
   main > h3 {
@@ -736,4 +739,46 @@ footer .contenedor-info-footer .logo-redes {
     transform: translatex(-35%);
     bottom: 30%;
   }
+}
+.contenedor-carrito {
+  min-height: 40vh;
+  margin-top: 200px;
+  display: flex;
+  margin-left: 30px;
+  flex-direction: column;
+}
+.contenedor-carrito img {
+  width: 100px;
+}
+.contenedor-carrito h2 {
+  color: #000;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.contenedor-carrito p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+.contenedor-carrito button {
+  max-width: 200px;
+  margin-bottom: 2rem;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+.contenedor-carrito button:hover {
+  background-color: #333;
+  color: #ff9900;
+  padding: 20px 30px;
+}
+.contenedor-carrito .text-opciones {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 1;
 }/*# sourceMappingURL=syles.css.map */
